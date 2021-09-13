@@ -24,6 +24,10 @@ export default class App extends Component {
   }
 
  
+  /**
+   * 
+   * Making webservice call 
+   */
   searchLocation = async (text) => {
     this.setState({searchKeyword: text});
     axios
@@ -43,7 +47,10 @@ export default class App extends Component {
       });
   };
 
-
+/**
+ * To open url of github user profile in browser
+ * 
+ */
   loadInBrowser (item) {
    
     
